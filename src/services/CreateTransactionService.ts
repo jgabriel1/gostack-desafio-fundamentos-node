@@ -1,11 +1,11 @@
-import TransactionsRepository from '../repositories/TransactionsRepository';
-import Transaction from '../models/Transaction';
+import TransactionsRepository from '../repositories/TransactionsRepository'
+import Transaction from '../models/Transaction'
 
 class CreateTransactionService {
-  private transactionsRepository: TransactionsRepository;
+  private transactionsRepository: TransactionsRepository
 
   constructor(transactionsRepository: TransactionsRepository) {
-    this.transactionsRepository = transactionsRepository;
+    this.transactionsRepository = transactionsRepository
   }
 
   public execute(): Transaction {
@@ -13,4 +13,4 @@ class CreateTransactionService {
   }
 }
 
-export default CreateTransactionService;
+export default CreateTransactionService
